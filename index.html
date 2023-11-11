@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohith Anabathula</title>
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="style.css">
+     
+    <!-- FAVICONS LINK -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <header>
+    <!-- Sidde Bar -->
+    <aside>
+        <div class="main-box">
+            <input type="checkbox" id="check">
+            <div class="btn-side">
+                <label for="check">
+                    <i class="fas fa-bars"></i>
+                </label>
+            </div>
+            <div class="sidebar-menu">
+                <div class="logo">
+                  <a href="#" >Mohith Anabathula</a>
+                </div>
+                <div class="btn-close">
+                    <label for="check">
+                        <i class="fas fa-times"></i>
+                    </label>
+                 </div>
+                <div class="menu">
+                <ul>
+                    <li><a href="#"> <i class="fas fa-qrcode"></i> Home</a></li>
+                    <li><a href="#"> <i class="fas fa-question-circle"></i> About</a></li>
+                    <li><a href="#"> <i class="fas fa-stream"></i> Skills</a></li>
+                    <li><a href="#"><i class="fas fa-sliders-h"></i>Services</a></li>
+                    <li><a href="#"> <i class="fas fa-comment"></i> Contact</a></li>
+                    
+                </ul>
+            </div>
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/rockyMohith2?t=JCQ8uUYNm3Lil1bqNh-Dxg&s=08"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/anabathula-mohith"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+           
+        </div>    
+    </aside>
+     <!-- End of Side Bar -->
+
+     <!-- Top Welcome -->
+     
+   <div class="box">
+    <div class="welcome">
+        <h1 >Welcome To My Page</h1>
+        <h1>I'm Mohith Anabathhula</h1>
+    </div>
+   </div> 
+   <!-- End Top Welcome -->
+   <br>
+</header>
+<hr><br>
+   <main> 
+    <!-- About -->
+    <div class="about">
+        <p>My self Mohith Anabathula. I'm Studying 2nd Year B.Tech in <a href="https://diet.ac.in/">Dhanekula Institute of Engineering and Technology</a> 
+    </div>
+    
+    <div class="about2">
+        <p>
+            I would like to design  lovable and user friendly websites. <br>
+            I can give my afforts to make a Beautyful websites. <br>
+            Programming is my Crush
+        </p> 
+    </div>
+    <!-- End About -->
+
+    <!-- Skills -->
+    
+    <div class="skills-box">
+        <div class="skills-matter">
+           <h1 >SKILLS</h1>
+           <p><em>HTML</em></p>
+           <p><em>CSS</em></p>
+           <p><em>C</em></p>
+           <p><em>PYTHON</em></p>
+           <p><em>C++</em></p> <br><br><br><br><br>
+           <h3>I Never stop learning programming. <br>This list will Increase. </h3>
+        </div>
+    </div>
+    <!-- End Skills -->
+<!-- Image -->
+     <img src="./Images/My pic.jpg" alt="My Photo" class="my-img">
+    <!-- Services -->
+    <div class="services-box">
+        <div class="services-matter">
+            <h1>Services</h1>
+            <div class="switch-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="switch-btn" onclick="FrontEnd()">FrontEnd</button>
+                    <button type="button" class="switch-btn" onclick="BackEnd()">BackEnd</button>
+                </div>
+                <div class="switch-matter">
+                <form class="service-text" id="FrontEnd">
+                    <p>-->HTML</p>
+                    <p>-->CSS</p>
+                    
+                    <h3>I will Increase this list</h3>
+                </form>
+
+                <form class="service-text" id="BackEnd">
+                    <h3>I will start this in 3rd Year</h3>
+                </form>
+                </div>
+                <script>
+                    var x = document.getElementById("FrontEnd")
+                    var y = document.getElementById("BackEnd")
+                    var z = document.getElementById("btn")
+                
+                    function BackEnd(){
+                        x.style.left = "-400px"
+                        y.style.left = "50px"
+                        z.style.left = "110px"
+                    }
+                
+                    function FrontEnd(){
+                        x.style.left = "20px"
+                        y.style.left = "420px"
+                        z.style.left = "0"
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br>
+    <hr>
+    <footer>
+        <div class="footer-area">
+            <div class="footer-box">
+                <h2>Contact</h2>
+                <div class="footer-content">
+                  <h4>Phone: </h4>
+                  <p>+91 7396186469</p>
+                  <h4>Email:</h4>
+                  <p>mohithanabathula@gmail.com</p> <br><br>
+                </div>
+                <h2>
+                    Feedback:
+                  </h2>
+                  
+                  <div class="feedback">
+                    <label for="Name">Name: <br> <input type="text" name="Name" placeholder="Name"></label> <br>
+                    <label for="message">Feedback: <br> <textarea cols="45" rows="6" name="message" id="message" placeholder="Enter your FEEDBACK"></textarea></label>
+                  </div>
+                  <span>
+                  All rights reserved to
+                   &copy;Mohith Anabathula</span> 
+                
+            </div>
+        </div>
+    </footer>
+   </main>
+</body>
+</html>
